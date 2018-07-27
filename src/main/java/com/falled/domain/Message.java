@@ -1,6 +1,9 @@
 package com.falled.domain;
 
 
+import org.hibernate.validator.constraints.Length;
+import org.hibernate.validator.constraints.NotBlank;
+
 import javax.persistence.*;
 
 @Entity
@@ -9,8 +12,12 @@ public class Message {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
-    private String text;
 
+    @NotBlank(message = "Please fill the message")
+    @Length(max = 2048, message = "Message is too long")
+    private String text;
+    @NotBlank(message = "Please fill the tag")
+    @Length(max = 2048, message = "tag is too long")
     private String tag;
 
     private String filename;
