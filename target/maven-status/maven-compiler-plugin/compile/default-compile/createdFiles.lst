@@ -1,0 +1,16 @@
+com/falled/repos/MessageRepository.class
+com/falled/controller/RegistrationController.class
+com/falled/service/MailSender.class
+com/falled/Application.class
+com/falled/service/UserService.class
+com/falled/domain/User.class
+com/falled/config/EncriptionConfig.class
+com/falled/domain/Message.class
+com/falled/domain/Role.class
+com/falled/config/WebSecurityConfig.class
+com/falled/config/MvcConfig.class
+com/falled/repos/UserRepository.class
+com/falled/controller/ControllerUtils.class
+com/falled/controller/UserController.class
+com/falled/controller/MainController.class
+com/falled/config/MailConfig.class

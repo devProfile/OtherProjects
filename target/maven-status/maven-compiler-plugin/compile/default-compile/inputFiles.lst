@@ -1,0 +1,16 @@
+/home/jura/IdeaProjects/Spring/src/main/java/com/falled/domain/Message.java
+/home/jura/IdeaProjects/Spring/src/main/java/com/falled/controller/ControllerUtils.java
+/home/jura/IdeaProjects/Spring/src/main/java/com/falled/domain/User.java
+/home/jura/IdeaProjects/Spring/src/main/java/com/falled/service/UserService.java
+/home/jura/IdeaProjects/Spring/src/main/java/com/falled/config/MailConfig.java
+/home/jura/IdeaProjects/Spring/src/main/java/com/falled/domain/Role.java
+/home/jura/IdeaProjects/Spring/src/main/java/com/falled/repos/UserRepository.java
+/home/jura/IdeaProjects/Spring/src/main/java/com/falled/config/EncriptionConfig.java
+/home/jura/IdeaProjects/Spring/src/main/java/com/falled/config/MvcConfig.java
+/home/jura/IdeaProjects/Spring/src/main/java/com/falled/controller/MainController.java
+/home/jura/IdeaProjects/Spring/src/main/java/com/falled/repos/MessageRepository.java
+/home/jura/IdeaProjects/Spring/src/main/java/com/falled/Application.java
+/home/jura/IdeaProjects/Spring/src/main/java/com/falled/controller/RegistrationController.java
+/home/jura/IdeaProjects/Spring/src/main/java/com/falled/service/MailSender.java
+/home/jura/IdeaProjects/Spring/src/main/java/com/falled/config/WebSecurityConfig.java
+/home/jura/IdeaProjects/Spring/src/main/java/com/falled/controller/UserController.java
