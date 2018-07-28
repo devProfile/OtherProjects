@@ -5,6 +5,7 @@ import com.falled.domain.Role;
 import com.falled.domain.User;
 import com.falled.repos.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
@@ -25,6 +26,10 @@ public class UserService implements UserDetailsService {
 
     @Autowired
     private PasswordEncoder passwordEncoder;
+
+
+    @Value("${hostname}")
+    private String hostname;
 
     @Override
     public UserDetails loadUserByUsername(String s) throws UsernameNotFoundException {
@@ -56,7 +61,7 @@ public class UserService implements UserDetailsService {
         if(!StringUtils.isEmpty(user.getEmail())){
             String message = String.format(
                     "Hello %s! \n" +
-                            "Welcome to my new project. Please visit next link: http://localhost:8080/activate/%s", user.getUsername(), user.getActivationCode()
+                            "Welcome to my new project. Please visit next link: http://%s/activate/%s", user.getUsername(),hostname, user.getActivationCode()
             );
 
             mailSender.send(user.getEmail(), "Actication code", message);
