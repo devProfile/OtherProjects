@@ -28,7 +28,7 @@
             </div>
             <div class="form-group">
 
-                <input class="form-control ${(tagError??)?string('is-invalid', '')}" value="<#if message??>${message.text}</#if>" type="text" name="tag" placeholder="Enter tag">
+                <input class="form-control ${(tagError??)?string('is-invalid', '')}" value="<#if message??>${message.tag}</#if>" type="text" name="tag" placeholder="Enter tag">
             <#if tagError??>
                 <div class="invalid-feedback">
                     ${tagError}
